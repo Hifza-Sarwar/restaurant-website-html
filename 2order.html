@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- This one table is copy from 1index file -->
+    <table>
+        <tr>
+            
+            <td width="600px">
+                <image src="image.png" height="150"></image>
+            </td>
+            
+            <td width="200px" ><a href="1index.html">HOME</a></td>
+             <td width="200px" ><a href="2order.html">Order Now</a></td>
+            <td width="200px"><a href="4cookintoturial.html">Cooking Toturials</a></td>
+            <td width="200px" ><a href="3contact.html">Contact Us</a></td>
+         </tr>
+        
+      </table>
+
+      <center>
+        <h2>Order Confirmation</h2>
+        <p><b>We're delighted you choose Delicious bites.Now let's order the food </b>
+            <p> <b>Click Here</b> <a href="1index.html#menue">Menu </a><b>and directly see the menu</b></p>
+      </center>
+
+   <fieldset>
+    <legend>
+       <b> Customer's Details</b>
+    </legend>
+    <!-- Customer's Details form -->
+    <form action="submit.php" method="get">
+
+        <lable for="CNmae">Customer Name</lable>
+        <br>
+        <input type="text" name="Customername" id="CNmae" placeholder="Your Name">
+        <br>
+        <lable for="C-email">Customer Email</lable>
+        <br>
+        <input type="email" name="Email" id="C-email" placeholder="Enter your Email">
+        <br>
+        <lable for="phone">Phone Number</lable>
+        <br>
+        <input type="tel" name="Phone" id="phone" placeholder="03xxxxxxxxx">
+        <br>
+        <lable for="Password">Password</lable>
+        <br>
+        <input type="password" name="Password" id="Password" placeholder="password" required>
+    </fieldset>
+    
+    <!-- Another feildset for order's Details -->
+
+     
+     
+        <fieldset>
+            <legend>
+                <b>Order's Details</b>
+            </legend>
+        <lable for="delivery-method">Delivery Method:</lable>
+       
+        <input type="radio" name="Delivery" id="home">
+        <label for="home">Home</label>
+      
+        <input type="radio" name="Delivery" id="Pickup">
+        <label for="Pickup">Pickup</label>
+        <br>
+        <br>
+        <label for="toping">Extra Toppings:</label>
+       
+        <input type="checkbox" name="mayonais" id="mayinis">
+        <label for="mayinis">Mayonaise</label>
+        
+        <input type="checkbox" name="Cheeze" id="cheeze">
+        <label for="cheeze">Cheeze</label>
+        
+        <input type="checkbox" name="Suace" id="suace">
+        <label for="suace">Suace</label>
+        <br>
+        <br>
+        <lable for="Number">Quantity of Items:</lable>
+        <br>
+        <input type="number" name="number" id="Number">
+        <br>
+        <br>
+        <lable for="range">Choose Spice Level:</lable>
+        <br>
+        <input type="range" name="Range" id="range" min="1" max="10">
+        <br><br>
+        <lable for="Date">Delivery Date:</lable>
+        <br>
+        <input type="date" name="date" id="Date">
+        <br>
+        <br>
+        <lable for="time">Delivery Time:</lable>
+        <br>
+        <input type="time" name="Time" id="time">
+        <br><br>
+        <lable for="coulor">Pick your favourite theme Color:</lable>
+        <br>
+        <input type="color" name="Color" id="color">
+        <br><br>
+        <lable for="File">Upload Payment receipt or ID:</lable>
+        <input type="file" name="file" id="File">
+        <br><br>
+        <lable for="select">Choose Dish:</lable>
+        
+        <select name="Select" id="select">
+            
+            <option value="shwarma">Shawarma</option>
+            <option value="pizza">Pizza</option>
+            <option value="biryani">Biryani</option>
+            <option value="chicken">Chicken Karahi</option>
+            <option value="mutton">Mutton Karahi</option>
+            <option value="dumba">Dumba Karahi</option>
+            <option value="pasta">Pasta</option>
+            <option value="chanachat">Chana Chat</option>
+        </select>
+        <br>
+        <br>
+        <textarea placeholder="write your isntruction here!!!!" name="instruction" id="Instructions" >
+
+        </textarea>
+        <br>
+      <div>
+        <button name="ConfirmOrder" id="confirmoder">Confirm Order</button>
+      <button name="Clearform" id="clearform">Clear Form</button>
+      </div>
+       
+      
+        
+        
+    </form>
+   </fieldset>
+</body>
+</html>
